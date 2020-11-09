@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<title>StaySafeInDaBoro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Home) */
+.bgimg-1 {
+  background-image: url("Statesboro1.jpg");
+  min-height: 400px;
+}
+
+/* Second image (News) */
+.bgimg-2 {
+  background-image: url("PJ_2016.07.07_Modern-News-Consumer_0-01.png");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("Statesboro1.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #000000;
+}
+
+/* Add some padding and a black background color to containers */
+.container {
+  padding: 20px;
+  background-color: #000000;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000066;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #000066;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="transparentlogo.png" style="width:100%">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#news" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-newspaper-o w3-xxlarge"></i>
+    <p>NEWS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Stay<span class="w3-hide-small">SafeInDa</span>Boro.</span>
+  </div>
+</div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-white w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">StaySafeInDaBoro</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>StaySafeInDaBoro is stationed right here in Statesboro, GA. We are here to make sure we bring the most accurate news to the local community and to whom ever may want to know about what it the lastest news here in Statesboro. We hope to answer any questions that anyone may have or
+	 any news that we should be aware of in our community. We will also have a system where you can contact a number that would be displayed on the NEWS page to have the lastest news sent to you personally, so you can stay up to date about the news that would be happening in our
+	 local community, so you can be safe also. We hope to speak to you soon, and that this is helpful to you, family, and friends.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Crime Statistics On-Campus</h3>
+	<hr style="width:300px" class="w3-opacity">
+    <p class="w3-wide">Disciplinary Actions &#8594; (73.1%)</p> 
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:73.1%"></div>
+    </div>
+    <p class="w3-wide">Arrest for possession &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8594; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (22.9%)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:22.9%"></div>
+    </div>
+	<p class="w3-wide">Arrest for major crimes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8594;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(5.6%)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:5.6%"></div>
+    </div>
+    <p class="w3-wide">Violence against women(reported) &nbsp; &nbsp; &nbsp; &#8594;  &nbsp; &nbsp; &nbsp; &nbsp;(3.3%)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:3.3%"></div>
+    </div>
+    <br>
+
+
+ <!-- Second Parallax Image with NEWS Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="news">
+<div class="w3-display-middle" style="white-space:nowrap;">
+  	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">News</span></span>  
+ </div>
+</div>
+    
+    
+    <!--News Section-->
+<div>
+  <p class="w3-center"><em>If you would like to be informed about the latest news, please text this number to stay informed by <b> "STAYSADEINDABORO" </b> and where you will get the latest and best news to keep you safe around the city and nieghboring cities.<br></em>Text this number here: </p><br>
+</div>
+ 
+  <form action="welcome.php" method="get">
+  <div class="container">
+    <h2><center>Subscribe to our Newsletter!</center></h2>
+    <p>If you would like subscribe to our daily newsletter, complete the form below! This newsletter will include all the recent information that will also be sent to you if you also signed up for the text information to be sent to you also.</p>
+  </div>
+
+  <div class="container" style="background-color:gray">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+</div>
+
+  <!-- Third Parallax Image with Contact Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+<div class="w3-display-middle" style="white-space:nowrap;">
+  	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">Contact</span></span>  
+  </div>
+</div>
+    
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Us</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Georgia, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 912-428-1958</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ah13066@georgiasouthern.edu</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+	<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
